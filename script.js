@@ -89,6 +89,47 @@ function exercise3() {
 }
 
 
+// Exercise 4
+
+/*
+Prompt the user for a time of day (morning, noon, or evening). Based on their input, log a
+string to the console that will let the user know what they should be eating for that specific
+meal. Use the tables below to guide your logic. 
+ 
+Meal​ ​Type       Food​ ​Suggestion 
+breakfast       eggs and toast
+lunch           a salad
+dinner          chicken and rice
+ 
+Time​ ​of​ ​Day     Meal​ ​Type 
+morning         breakfast
+noon            lunch
+evening         dinner
+ 
+Example​ ​Outputs:  
+Prompt: ‘What time of day is it?’ > ‘morning’
+Output: ‘Since it is morning, you should be eating breakfast. We
+suggest eggs and toast.’
+Prompt: ‘What time of day is it?’ > ‘evening’
+Output: ‘Since it is evening, you should be eating dinner. We suggest
+chicken and rice.’
+*/
+
+function exercise4() {
+    var morning = "morning";
+    var noon = "noon";
+    var evening = "evening";
+    result = prompt("What time of day is it?", "morning, noon or evening?")
+    if (result == morning) {
+        console.log("Since it is morning, you should be eating breakfast, we suggest eggs and toast.");
+    } else if (result == noon) {
+        console.log("Since it is noon, you should be eating lunch. We suggest chicken and rice.");
+    } else if (result == evening) {
+        console.log("Since it is evening, you should be eating dinner. We suggest chicken and rice.");
+    } else {
+        console.log("Please select morning, noon or evening.")
+    }
+}
 
 
 
